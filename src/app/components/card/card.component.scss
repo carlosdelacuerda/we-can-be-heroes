@@ -1,0 +1,29 @@
+mat-card {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: ease-in-out .3s;
+    &:hover {
+        box-shadow: 0 0 0 transparent !important;
+        transition: ease-in-out .3s;
+    }
+    app-edit {
+        background-color: rgba($color: #ffffff, $alpha: .8);
+        position: absolute;
+        width: 70px;
+        margin-top: -160px;
+        left: 5px;
+    }
+    mat-card-content {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        background-color: rgba($color: #ffffff, $alpha: .8);
+        font-weight: bold;
+        text-align: center;
+        span {
+            cursor: pointer;
+        }
+    }
+}

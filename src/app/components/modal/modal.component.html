@@ -1,0 +1,14 @@
+<div class="modal-container">
+  <div class="modal-content">
+    <h1 mat-dialog-title>{{ data.title }}</h1>
+    <div mat-dialog-content>
+      <p>{{ data.text }}</p>
+    </div>
+    <div mat-dialog-actions *ngIf="!data.button">
+      <button mat-button (click)="onClick()">Entendido</button>
+    </div>
+    <div mat-dialog-actions *ngIf="data.button">
+      <button mat-button (click)="deleteHero(data.id)">Sí, Borrar</button>
+    </div>
+  </div>
+</div>

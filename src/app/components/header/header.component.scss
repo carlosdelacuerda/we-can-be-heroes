@@ -1,0 +1,17 @@
+div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    min-height: 50px;
+    app-menu {
+        position: absolute;
+    }
+    h1 {
+        margin: auto;
+        font-weight: bold;
+        @media (max-width: 800px) {
+            display: none;
+        }
+    }
+}

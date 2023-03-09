@@ -1,0 +1,22 @@
+<div class="form-container">
+  <mat-form-field>
+    <mat-label>Bucar héroe</mat-label>
+    <input (focus)="searchHeroe$()" (focusout)="inactiveSubscribe()" [(ngModel)]="heroName" type="text" matInput (keyup)="searchHero($event)" #input>
+  </mat-form-field>
+  <button mat-button color='primary' routerLink="/form/CrearHeroe">
+    <span>Crear héroe</span>
+  </button>
+</div>
+<div class="card-container">
+    <app-card *ngFor="let hero of viewHeroes" [hero]='hero'></app-card>
+</div>
+<mat-paginator #paginator
+               class="demo-paginator"
+               (page)="handlePageEvent($event)"
+               [length]="numberOfPages"
+               [pageSize]="pageSize"
+               [showFirstLastButtons]="false"
+               [hidePageSize]="true"
+               [pageIndex]="currentPage">
+</mat-paginator>
+

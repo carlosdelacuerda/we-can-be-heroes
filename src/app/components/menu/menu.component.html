@@ -1,0 +1,18 @@
+<button class="menu-button" mat-button [matMenuTriggerFor]="menu" color="primary">
+  <mat-icon>menu</mat-icon>
+  <span>MENU</span>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item routerLink="/list">
+    <mat-icon>list</mat-icon>
+    <span>List</span>
+  </button>
+  <button mat-menu-item routerLink="/form/CrearHeroe">
+    <mat-icon>edit</mat-icon>
+    <span>Form</span>
+  </button>
+</mat-menu>

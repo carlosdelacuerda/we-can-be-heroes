@@ -1,0 +1,8 @@
+<div class="contaier-botonera">
+    <button class="edit" mat-button color="accent" [routerLink]='"/form/" + hero.id'>
+        <mat-icon>edit</mat-icon>
+    </button>
+    <button class="delete" mat-button color="warn" (click)="delete()">
+        <mat-icon>delete</mat-icon>
+    </button>
+</div>

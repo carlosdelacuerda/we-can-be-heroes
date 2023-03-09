@@ -1,0 +1,21 @@
+.modal-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .modal-content {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        * {
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        button {
+            width: 200px;
+            display: flex;
+            margin: auto;
+        }
+    }
+}

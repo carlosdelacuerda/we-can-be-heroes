@@ -1,0 +1,10 @@
+<form [formGroup]="heroesForm" (submit)="navigateTo()">
+    <mat-form-field>
+      <mat-label>ID</mat-label>
+      <input  formControlName="heroeID" value="" type="numbber" matInput (keyup)="changeInput()" #input>
+    </mat-form-field>
+    <mat-error *ngIf="withID && !heroesForm.valid">El ID debe ser numérico</mat-error>
+    <button type="submit" mat-button [color]=colorButton>
+        <span>{{ textInButton | uppercase }}</span>
+    </button>
+</form>

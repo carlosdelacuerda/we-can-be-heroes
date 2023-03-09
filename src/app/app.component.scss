@@ -1,0 +1,26 @@
+.loading {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #fff, $alpha: .8);
+    overflow: hidden;
+    display: flex;
+    mat-spinner {
+        display: flex;
+        margin: auto;
+    }
+}
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

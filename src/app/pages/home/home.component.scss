@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        }
+    app-access-form {
+        width: 100%;
+        display: flex;
+    }
+}

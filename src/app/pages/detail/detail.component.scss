@@ -1,0 +1,29 @@
+.container-detail {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .hero-img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        img {
+            height: auto;
+            width: 150%;
+            margin: auto;
+            display: flex;
+        }
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    app-edit {
+        border: 1px solid #b4b5b7;
+        display: flex;
+        margin: auto;
+    }
+}

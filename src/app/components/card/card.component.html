@@ -1,0 +1,6 @@
+<mat-card style="background-image: url({{hero.img}})">
+    <mat-card-content>
+        <span [routerLink]="['/detail', hero.id]">{{hero.name}}</span>
+        <app-edit [hero]="hero"></app-edit>
+    </mat-card-content>
+</mat-card>

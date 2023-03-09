@@ -1,0 +1,27 @@
+.form-heros {
+    h2, button span {
+        width: 100%;
+        text-align: center;
+    }
+    mat-form-field, button, .error-container {
+        width: 600px;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    button {
+        border: 1px solid #a9a9ab;
+        &:hover {
+            border: 0 solid transparent;
+        }
+    }
+    .error-container {
+        height: 30px;
+        margin-top: -25px;
+        padding-bottom: 20px;
+        mat-error {
+            position: absolute;
+            max-width: 100%;
+        }
+    }
+}

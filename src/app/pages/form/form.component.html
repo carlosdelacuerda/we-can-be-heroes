@@ -1,0 +1,32 @@
+<form [formGroup]="formGroup" (submit)="sendInfo()" class="form-heros">
+    <div>
+        <h2>
+            <ng-container *ngIf="!newHero">
+                ID: {{ hero.id }}. Nombre: 
+            </ng-container>
+            {{ heroTitle }}
+        </h2>
+    </div>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input  formControlName="name" value="{{ hero.name }}" type="text" matInput #input>
+    </mat-form-field>
+    <div class="error-container">
+        <mat-error
+        *ngIf="formGroup.get('name').hasError('required') || formGroup.get('name').hasError('minlength')">
+        Debe introducir un nombre con al menos 3 caractéres</mat-error>
+    </div>
+    <mat-form-field>
+        <mat-label>Img</mat-label>
+        <input  formControlName="img" value="{{ hero.img }}" type="text" matInput #input>
+    </mat-form-field>
+    <div class="error-container">
+        <mat-error
+        *ngIf="formGroup.get('img').hasError('required') || formGroup.get('img').hasError('pattern')">
+        La imagen debe tener el formato de una URL
+    </mat-error>
+    </div>
+    <button type="submit" mat-button color='primary' [disabled]="formGroup.invalid">
+        <span>Guardar cambios</span>
+    </button>
+</form>
